@@ -1,0 +1,84 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/vue3-recommended",
+    "@vue/typescript/recommended",
+    "@vue/prettier"
+  ],
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser"
+  },
+  "rules": {
+    "vue/html-self-closing": [
+      "error",
+      {
+        "html": {
+          "void": "always"
+        }
+      }
+    ],
+    "vue/multiline-html-element-content-newline": ["error"],
+
+    "no-var": ["error"],
+    "vue/block-lang": [
+      "error",
+      {
+        "script": {
+          "lang": "ts"
+        }
+      }
+    ],
+    "vue/block-tag-newline": [
+      "error",
+      {
+        "singleline": "always",
+        "multiline": "always"
+      }
+    ],
+    "vue/component-name-in-template-casing": [
+      "error",
+      "PascalCase",
+      {
+        "registeredComponentsOnly": false
+      }
+    ],
+    "vue/custom-event-name-casing": ["error", "kebab-case"],
+    "vue/html-button-has-type": ["error"],
+    "vue/html-comment-content-newline": [
+      "error",
+      {
+        "singleline": "ignore",
+        "multiline": "always"
+      }
+    ],
+    "vue/html-comment-indent": ["error", 2],
+    "vue/html-comment-content-spacing": ["error", "always"],
+
+    "vue/no-empty-component-block": ["warn"],
+    "vue/no-export-in-script-setup": ["error"],
+    "vue/no-multiple-objects-in-class": ["error"],
+    "vue/no-reserved-component-names": [
+      "error",
+      {
+        "disallowVueBuiltInComponents": true,
+        "disallowVue3BuiltInComponents": true
+      }
+    ],
+    "vue/no-template-target-blank": ["error"],
+    "vue/padding-line-between-blocks": ["error", "always"],
+    "vue/v-on-function-call": ["error", "always"]
+  },
+  "overrides": [
+    {
+      "files": ["pages/*.vue", "src/pages/*.vue"],
+      "rules": {
+        "vue/multi-word-component-names": "off"
+      }
+    }
+  ]
+}

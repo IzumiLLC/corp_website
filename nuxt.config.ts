@@ -2,9 +2,9 @@
 export default defineNuxtConfig({
   srcDir: 'src',
   typescript: {
-    strict: true
+    strict: true,
   },
   runtimeConfig: {
-    public: {}
-  }
+    public: {},
+  },
 })
