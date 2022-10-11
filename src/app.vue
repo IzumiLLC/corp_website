@@ -1,5 +1,13 @@
+<script setup lang="ts">
+import '@unocss/reset/tailwind.css'
+import { useHead } from '#imports'
+
+useHead({
+  title: 'Izumi LLC',
+})
+</script>
+
 <template>
-  <div>
-    <NuxtWelcome />
-  </div>
+  <HomeHeader />
+  <NuxtPage />
 </template>

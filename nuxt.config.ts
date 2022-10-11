@@ -4,7 +4,10 @@ export default defineNuxtConfig({
   typescript: {
     strict: true,
   },
+
   runtimeConfig: {
     public: {},
   },
+
+  modules: ['@unocss/nuxt'],
 })
