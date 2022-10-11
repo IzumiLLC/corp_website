@@ -10,4 +10,5 @@ useHead({
 <template>
   <HomeHeader />
   <NuxtPage />
+  <HomeFooter />
 </template>
