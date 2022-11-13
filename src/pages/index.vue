@@ -1,10 +1,5 @@
 <template>
-  <div
-    class="py-40 text-center bg-gradient-to-br from-light-blue-300 to-blue-400 text-white text-shadow"
-  >
-    <h2 class="text-3xl font-bold">楽をつくる、楽しいをつくる</h2>
-    <p class="mt-2 text-xl">Creating Ease, Creating Fun</p>
-  </div>
+  <HomeSectionHero />
   <div id="products" class="px-20 py-10 bg-white">
     <h3 class="text-2xl font-bold">Products</h3>
     <div class="pt-4">
