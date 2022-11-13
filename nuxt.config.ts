@@ -6,8 +6,14 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
+    apiFormEndpoint: process.env.API_FORM_ENDPOINT,
     public: {},
   },
 
-  modules: ['@unocss/nuxt'],
+  modules: ['@unocss/nuxt', '@formkit/nuxt'],
+
+  formkit: {
+    defaultConfig: false,
+    configFile: './formkit.config.ts',
+  },
 })

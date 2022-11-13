@@ -8,6 +8,10 @@
     "postinstall": "nuxt prepare",
     "prepare": "husky install"
   },
+  "dependencies": {
+    "@formkit/nuxt": "^1.0.0-beta.11",
+    "@formkit/themes": "^1.0.0-beta.11"
+  },
   "devDependencies": {
     "@iconify/json": "^2.1.134",
     "@typescript-eslint/eslint-plugin": "^5.39.0",
