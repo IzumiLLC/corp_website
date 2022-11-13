@@ -9,6 +9,7 @@
     "prepare": "husky install"
   },
   "devDependencies": {
+    "@iconify/json": "^2.1.134",
     "@typescript-eslint/eslint-plugin": "^5.39.0",
     "@typescript-eslint/parser": "^5.39.0",
     "@unocss/nuxt": "^0.45.29",

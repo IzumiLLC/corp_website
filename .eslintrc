@@ -44,7 +44,8 @@
       "error",
       "PascalCase",
       {
-        "registeredComponentsOnly": false
+        "registeredComponentsOnly": false,
+        "ignores": ["component"]
       }
     ],
     "vue/custom-event-name-casing": ["error", "kebab-case"],
