@@ -16,4 +16,9 @@ export default defineNuxtConfig({
     defaultConfig: false,
     configFile: './formkit.config.ts',
   },
+
+  routeRules: {
+    '/': { static: true },
+    '/*': { ssr: false },
+  },
 })
