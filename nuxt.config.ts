@@ -16,8 +16,4 @@ export default defineNuxtConfig({
     defaultConfig: false,
     configFile: './formkit.config.ts',
   },
-
-  experimental: {
-    payloadExtraction: true,
-  },
 })
