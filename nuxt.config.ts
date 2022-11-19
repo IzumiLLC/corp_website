@@ -17,9 +17,7 @@ export default defineNuxtConfig({
     configFile: './formkit.config.ts',
   },
 
-  nitro: {
-    prerender: {
-      routes: ['/'],
-    },
+  experimental: {
+    payloadExtraction: true,
   },
 })
